@@ -209,7 +209,7 @@ chrome.runtime.onMessage.addListener(function(msg,sender,response){
 					break;
 				}
 			}
-			//document.getElementById("reserveBtn").click();
+			document.getElementById("reserveBtn").click();
 		}
 
 });
