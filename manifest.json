@@ -1,0 +1,28 @@
+{
+	"name":"Book seat",
+	"manifest_version":2,
+	"version":"0.1",
+	"description":"图书馆抢座插件0",
+
+	"page_action":{
+		"default_popup":"popup.html",
+		"default_icon":"icon.png",
+		"default_title":"图书馆抢座插件V0.1"
+	},
+	"content_scripts":[
+	{
+		"matches":["http://202.206.242.87/*"],
+		"js":["content_js.js"],
+		"run_at":"document_start"
+	}],
+	"permissions":[
+		"tabs",
+		"http://202.206.242.87/*",
+		"alarms"
+	],
+	"background":{
+		"scripts":["event_js.js"],//"bgscript_js.js"],
+		"persistent":false
+	}
+
+}

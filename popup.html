@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Book seat popup</title>
+
+  <style>
+	#container {
+		width:300px;
+		height:400px;
+	}
+  </style>
+  <script src="bgscript_js.js"></script>
+ </head>
+ <body>
+	<div id="container">
+		<div>
+		<p>Disclaimer: I develop this tool just for practicing js coding and reserving seat for a few of my friends and myself only,I do not meant to break the rule.Any problem during using this program,please ignore....</p>
+		<p>functions there havn't been implemented yet,so,just for fun...  </p>
+		<select id="method">
+			<option>请选择选座方式</option>
+			<option value="111">随机选座</option>
+			<option>最近常坐</option>
+			<option>视图选座</option>
+		</select>
+		<select id="floor">
+			<option value="5">5楼</option>
+			<option value="6">6楼</option>
+			<option value="7">7楼</option>
+		</select>
+		<select id="room">
+			<option value="room_1">1阅</option>
+			<option value="room_2">2阅</option>
+			<option value="room_3">3阅</option>
+			<option value="room_4">4阅</option>
+			<option value="room_5">5阅</option>
+			<option value="room_A">A区</option>
+			<option value="room_B">B区</option>
+		</select>
+
+		<input id="seat" value="123" style="width:30px"/>
+
+		</div>
+		<footer>
+			<div>
+				<input type="button" id="saveCfg" value="保存设置">
+			</div>
+		</footer>
+	</div>
+ </body>
+</html>
