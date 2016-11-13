@@ -52,7 +52,7 @@ function messageCallback(msg,sender,responseMsg){
 			}
 			else if (msg.info=="getStartTime")
 			{
-				chrome.tabs.sendMessage(tabs[0].id,{command:"chooseStartTime",info:"09:00"});	
+				chrome.tabs.sendMessage(tabs[0].id,{command:"chooseStartTime",info:"15:00"});	
 			}
 			else if (msg.info=="getEndTime")
 			{

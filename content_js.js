@@ -47,7 +47,7 @@ function loadCompleteCallback(){
 	var currentTime = document.getElementById("currentTime").innerText;
 	var timeArr = currentTime.split(":");
 	// calculate how much time still left 
-	var timeLeft = (14*60+60) - (timeArr[0]*60)-timeArr[1];
+	var timeLeft = (14*60+59) - (timeArr[0]*60)-timeArr[1];
 
 	// we act like that just to ensure that we always connect with the server
 	if (timeLeft > 2)
@@ -78,7 +78,7 @@ function loadCompleteCallback(){
 		setTimeout(function(){
 			console.log("200ms刷新一次"+timeLeft);
 			method(2);
-		},60*1000+200);
+		},60*1000+3*1000);
 		
 	}
 
@@ -140,7 +140,17 @@ function loadCompleteCallback(){
 	}
 	else if (document.URL.search("http://202.206.242.87/selfRes") >-1)
 	{
-
+		setTimeout(function(){
+			var text = document.getElementsByClassName("layoutSeat")[0]
+				.getElementsByTagName("dl")[0]
+				.getElementsByTagName("dd")[0].innerText;
+			if ((text.match("预约失败") != null )&&( timeLeft > -3 ))
+			{
+				method(2);
+				console.log(text);
+			}
+			
+		},500);
 	}
 	//alert("debug");
 	
