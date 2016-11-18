@@ -18,7 +18,9 @@
 	"permissions":[
 		"tabs",
 		"http://202.206.242.87/*",
-		"alarms"
+		"alarms",
+		"storage"
+
 	],
 	"background":{
 		"scripts":["event_js.js"],//"bgscript_js.js"],

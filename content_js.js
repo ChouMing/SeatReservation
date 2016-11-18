@@ -152,6 +152,10 @@ function loadCompleteCallback(){
 			
 		},500);
 	}
+	else if (document.URL.search("http://202.206.242.87/login") >-1){
+		document.getElementsByClassName("input1")[0].value="130104010037";
+		document.getElementsByClassName("input2")[0].value="zmy6821fa";
+	}
 	//alert("debug");
 	
 }
