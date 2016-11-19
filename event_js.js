@@ -22,6 +22,7 @@ function tabUpdateCallback(tabId,info,tab){
 		if (tab.url.search("http://202.206.242.87") > -1 )
 		{
 			chrome.pageAction.show(tab.id);
+			//dddd
 		}
 	}
 }
