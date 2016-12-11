@@ -144,7 +144,7 @@ function loadCompleteCallback(){
 			var text = document.getElementsByClassName("layoutSeat")[0]
 				.getElementsByTagName("dl")[0]
 				.getElementsByTagName("dd")[0].innerText;
-			if ((text.match("预约失败") != null )&&( timeLeft > -3 ))
+			if ((text.match("预约失败") != null )&&( timeLeft > -6 ))
 			{
 				method(2);
 				console.log(text);
